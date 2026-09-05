@@ -1,4 +1,4 @@
-export default function Start({speed, color, x}) {
+export default function Start({speed, color, x}: any) {
   const delay = Math.random() * 10;
 
   return (
