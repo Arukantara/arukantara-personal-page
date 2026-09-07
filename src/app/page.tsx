@@ -1,4 +1,5 @@
 import Star from '../components/star/star';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <Star speed="slow" x="95" color=""/>
       <main className="w-full max-w-3xl flex-col text-center py-32 px-16 bg-white dark:bg-black sm:items-start text-black dark:text-white">
         <h1 className="text-lg">Arukantara's playground (WIP)</h1>
-        
+        <p className="my-10">いらっしゃいませ!</p>
+        <Image src="./mitsuru-w.png" width={500} height={500} alt="Dibujo de Kirijo Mitsuru" unoptimized className='mx-auto my-4'/>
         <p>No os toméis esto en serio, I'll just do what I want here :)</p>
         <p>Das erstes Mal, dass ich einen personelle Web in React mache</p>
         <p>Expect linguistic chaos here.</p>
