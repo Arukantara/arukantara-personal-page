@@ -39,6 +39,11 @@ background: linear-gradient(135deg, #0f0c29 0%, #100d31 50%, #101020 100%);
   to {width: 5px; height: 5px;}
 }
 
+@keyframes star5Size {
+  from {width: 5px; height: 5px;}
+  to {width: 20px; height: 20px;}
+}
+
 .star {
   position: absolute;
   top: 100%;
@@ -53,6 +58,7 @@ background: linear-gradient(135deg, #0f0c29 0%, #100d31 50%, #101020 100%);
   animation-delay: 1s, 0s;
   animation-iteration-count: infinite, infinite;
   animation-timing-function: linear, linear;
+  z-index: 0;
 }
 
 .star.fast {
@@ -73,4 +79,17 @@ background: linear-gradient(135deg, #0f0c29 0%, #100d31 50%, #101020 100%);
 
 .star.red {
   background-color: #ffcccc;
+}
+
+.star.five-point {
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
+  width: 10px;  
+  height: 10px;  
+  aspect-ratio: 1;
+  animation-name: starMovement, star5Size;
 }
