@@ -13,6 +13,9 @@ export default function Home() {
         <p>No os toméis esto en serio, I'll just do what I want here :)</p>
         <p>Das erstes Mal, dass ich einen personelle Web in React mache</p>
         <p>Expect linguistic chaos here.</p>
+        <br/>
+        <p><Image src="./github-logo.svg" alt="Github logo" width={15} height={15} className='relative inline'/> <a href="https://github.com/Arukantara/arukantara-personal-page">Take a look at the repo</a></p>
+        <p><Image src="./bluesky-logo.svg" alt="Bluesky logo" width={15} height={15} className='relative inline'/> <a href="https://bsky.app/profile/arukantara.eurosky.social">@arukantara.eurosky.social</a></p>
       </main>
     </div>
   );
