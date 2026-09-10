@@ -141,3 +141,8 @@ a:hover {
   right: 5%;
   top: calc(50% - 100px);
 }
+
+.drawings img.drawing-bottom {
+  right: 5%;
+  bottom: 0;
+}
