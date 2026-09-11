@@ -1,0 +1,32 @@
+@keyframes drawingMovement {
+  from {trasnform: translateY(-5%)}
+  to {trasnform: translateY(5%)}
+}
+
+.drawings img {
+  animation-name: drawingMovement;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+
+  &.drawing-left {
+    left: 5%;
+    top: 5%;
+  }
+
+  &.drawing-center {
+    left: 10%;
+    bottom: 5%;
+  }
+
+  &.drawing-right {
+    right: 5%;
+    top: calc(50% - 100px);
+  }
+
+  &.drawing-bottom {
+    right: 5%;
+    bottom: 0;
+  }
+}

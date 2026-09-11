@@ -111,38 +111,3 @@ a:hover {
   aspect-ratio: 1;
   animation-name: starMovement, star5Size;
 }
-
-
-@keyframes drawingMovement {
-  from {trasnform: translateY(-5%)}
-  to {trasnform: translateY(5%)}
-}
-
-.drawings img {
-  animation-name: drawingMovement;
-  animation-direction: normal;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 20s;
-}
-
-
-.drawings img.drawing-left {
-  left: 5%;
-  top: 5%;
-}
-
-.drawings img.drawing-center {
-  left: 10%;
-  bottom: 5%;
-}
-
-.drawings img.drawing-right {
-  right: 5%;
-  top: calc(50% - 100px);
-}
-
-.drawings img.drawing-bottom {
-  right: 5%;
-  bottom: 0;
-}
