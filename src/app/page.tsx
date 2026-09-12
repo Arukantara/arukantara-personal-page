@@ -1,12 +1,11 @@
 import Drawings from '@/components/drawings/drawings';
 import Stars from '@/components/stars/stars';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans stars-bg">
-      <Stars/>
-      <Drawings/>
+    <div className="flex flex-col flex-1 items-center justify-center font-sans">
       <main className="w-full max-w-3xl flex-col text-center py-32 px-16 bg-black-tp sm:items-start text-black dark:text-white z-1">
         <h1 className="text-lg">Arukantara's playground (WIP)</h1>
         <p className="my-10">いらっしゃいませ!</p>
@@ -16,6 +15,8 @@ export default function Home() {
         <br/>
         <p><Image src="./github-logo.svg" alt="Github logo" width={15} height={15} className='relative inline'/> <a href="https://github.com/Arukantara/arukantara-personal-page">Take a look at the repo</a></p>
         <p><Image src="./bluesky-logo.svg" alt="Bluesky logo" width={15} height={15} className='relative inline'/> <a href="https://bsky.app/profile/arukantara.eurosky.social">@arukantara.eurosky.social</a></p>
+        <p><Link href="/blog">Access the blog</Link></p>
+        <p><Link href="/gallery">Access the gallery</Link></p>
       </main>
     </div>
   );

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import Stars from "@/components/stars/stars";
+import Drawings from "@/components/drawings/drawings";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +30,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <title>Arukantara's playground</title>
         <meta property="og:title" content="Arukantara's playground" key="title" />
       </Head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col stars-bg">
+        <Stars/>
+        <Drawings/>
+        {children}</body>
     </html>
   );
 }

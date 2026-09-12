@@ -44,7 +44,7 @@ a:hover {
 }
 
 .stars-bg {
-  background: linear-gradient(135deg, #0f0c29 0%, #100d31 50%, #101020 100%);
+  background: linear-gradient(0deg, #530b3e 0%, #2a0385 10%, #0f0c29 15%, #0e093d 20%, #06022c 50%, #0a0a2c 100%);
 }
 
 @keyframes starMovement {
